@@ -1,0 +1,89 @@
+.ImageSlider img {
+    width: 100%;
+    display: none;
+}
+
+img.active {
+    display: inline-block;
+    transition: 1s ease-in-out;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 10px
+}
+
+#prev,
+#next {
+    background-color: #0e2d46;
+    color: white;
+    font-weight: 1000;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    font-size: 20pt;
+    text-align: center;
+    border-width: 2px;
+    border-color: white;
+}
+
+
+#next:hover{
+    background-color: white;
+    color: black;
+    font-weight: 1000;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    font-size: 20pt;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+    top: 85%; 
+    
+}
+
+#prev:hover{
+    background-color: white;
+    color: black;
+    font-weight: 1000;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    font-size: 20pt;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+    top: 85%;
+}
+
+/* RESPONSIVE */
+/* tablet */
+@media screen and (max-width: 768px) {
+    .button{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px
+    }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+    .button{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px
+    }
+}
+
+/* RESPONSIVE */

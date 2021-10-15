@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+header {
+  background-color: #0a274b;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Dropdown */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.frawlMenu {
+  height: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+  height: 45px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.hamburger div {
+  background-color: #0a274b;
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: 0.4s;
+}
+
+#icon {
+  display: none;
+}
+
+#icon:checked+.hamburger .atas {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#icon:checked+.hamburger .tengah {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#icon:checked+.hamburger .bawah {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#icon:checked~.menu {
+  height: 300px;
+}
+
+
+/* Menu */
+.menu {
+  width: 100%;
+  height: 100%;
+  background-color: #0a274b;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 120;
+}
+
+.menu a:first-child {
+  margin-top: 40px;
+}
+
+.menu a:last-child {
+  margin-bottom: 40px;
+}
+
+.link {
+  width: 100%;
+  font: 700 20px 'Barlow', sans-serif;
+}
+
+.link:hover {
+  background-color: #fff;
+  color: rgb(65, 56, 56);
+}
+
+.content {
+  background-color: #FFA500;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.characters {
+  width: 150px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  border: 5px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #55b3b1;
+}
+
+.characters:hover{
+  background-color: #2f7776;
+}
+
+
+.characters1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFA500;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .characters:hover {
+  box-shadow: 10px 6px white;
+} */
+
+/* tooltip */
+.tooltip {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+}
+
+.characters:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* content */
+
+footer {
+  color: white;
+  background-color: #0e2d46;
+}
+
+.footer-top {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer center a:hover {
+  background-color: aqua;
+}
+
+
+.footer-copyright {
+  text-align: center;
+}
+
+/* Phone */
+@media screen and (max-width: 768px) {
+
+  .characters {
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #55b3b1;
+  }
+
+  .characters1 {
+    padding: 0;
+    background-color: #FFA500;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+
+  .characters {
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #55b3b1;
+  }
+
+  .characters1 {
+    padding: 0;
+    background-color: #FFA500;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  /* tooltip */
+  .tooltip {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+  }
+}
